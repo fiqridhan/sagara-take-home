@@ -11,9 +11,32 @@ button { cursor: pointer; }
 img { max-width: 100%; }
 :focus-visible { outline: 3px solid #a15293; outline-offset: 3px; }
 .container-page { width: min(1600px, calc(100% - 48px)); margin-inline: auto; }
-.section-space { padding-block: 72px; }
-.section-heading { font-size: clamp(24px, 2.3vw, 36px); line-height: 1.2; font-weight: 700; }
-.section-copy { margin-top: 12px; color: #737373; font-size: 16px; line-height: 1.6; }
+.section-space { padding-block: 64px; }
+.section-heading { font-size: clamp(24px, 2.3vw, 31px); line-height: 1.2; font-weight: 700; color: #434343; }
+.section-copy { margin-top: 12px; color: #888; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.2; }
 .card-shadow { box-shadow: 0 4px 14px rgba(28, 28, 28, .1); }
-@media (max-width: 767px) { .container-page { width: min(100% - 32px, 600px); } .section-space { padding-block: 52px; } }
+.hero-section { position: relative; min-height: 916px; padding-top: 57px; }
+.hero-copy { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; }
+.hero-copy h1 { width: 680px; max-width: 50%; color: #3d3d3d; font-size: 49px; font-weight: 700; line-height: 1.2; }
+.hero-copy p { width: 648px; max-width: 48%; margin-top: 23px; color: #6a6a6a; font-size: 20px; font-weight: 500; line-height: 1.2; }
+.hero-image { position: absolute; top: 242px; right: 0; width: 75.3%; height: 598px; overflow: hidden; }
+.hero-search { position: absolute !important; top: 285px; left: 0; }
+.hero-indicator { position: absolute; bottom: 56px; left: 43%; display: flex; align-items: center; gap: 4px; }
+.hero-indicator span { width: 16px; height: 4px; background: rgba(255,255,255,.5); }
+.hero-indicator span:first-child { width: 40px; background: #ff5722; }
+.browse-section { padding-block: 48px 112px; }
+.browse-grid { margin-top: 46px; }
+.recommendations-section, .why-section { padding-block: 24px; }
+.product-page h1 { font-size: 31px; line-height: 1.2; }
+.product-page h2 { font-size: 25px; line-height: 1.2; }
+.product-page > div:first-child h2 { font-size: 20px; }
+.product-page strong.text-2xl { font-size: 20px; }
+.product-page .section-heading { font-size: 25px; }
+.booking-date-input { display: none; }
+#booking:target .booking-date-input { display: block; }
+@media (min-width: 1280px) { .browse-grid { gap: 40px; } }
+@media (max-width: 1399px) { .hero-copy h1 { font-size: clamp(38px, 3.4vw, 49px); } .hero-search { width: 44%; } }
+@media (max-width: 1023px) { .hero-section { min-height: 0; padding-block: 48px; } .hero-copy { display: block; } .hero-copy h1, .hero-copy p { width: auto; max-width: 100%; } .hero-copy p { margin-top: 20px; } .hero-image { position: relative; top: auto; right: auto; width: 100%; height: clamp(280px, 52vw, 520px); margin-top: 32px; } .hero-search { position: relative !important; top: auto; left: auto; width: min(100%, 698px); margin: -80px auto 0; } }
+@media (max-width: 767px) { .container-page { width: min(100% - 32px, 600px); } .section-space, .recommendations-section, .why-section { padding-block: 52px; } .browse-section { padding-block: 52px; } .browse-grid { margin-top: 32px; } }
+@media (max-width: 767px) { .hero-copy h1 { font-size: clamp(32px, 9vw, 42px); } .hero-copy p { font-size: 16px; line-height: 1.5; } .hero-search { margin-top: -32px; } .hero-image { height: 340px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
