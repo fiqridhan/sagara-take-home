@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: #292929; background: #fff; font-family: "Plus Jakarta Sans", Arial, sans-serif; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+img { max-width: 100%; }
+:focus-visible { outline: 3px solid #a15293; outline-offset: 3px; }
+.container-page { width: min(1600px, calc(100% - 48px)); margin-inline: auto; }
+.section-space { padding-block: 72px; }
+.section-heading { font-size: clamp(24px, 2.3vw, 36px); line-height: 1.2; font-weight: 700; }
+.section-copy { margin-top: 12px; color: #737373; font-size: 16px; line-height: 1.6; }
+.card-shadow { box-shadow: 0 4px 14px rgba(28, 28, 28, .1); }
+@media (max-width: 767px) { .container-page { width: min(100% - 32px, 600px); } .section-space { padding-block: 52px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
