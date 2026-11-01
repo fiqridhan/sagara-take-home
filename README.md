@@ -4,7 +4,7 @@ Responsive implementation of the supplied CEO SUITE Landing Page and Wisma GKBI 
 
 ## Tech Stack
 
-Next.js App Router, React, TypeScript (strict mode), Tailwind CSS, Plus Jakarta Sans, and Next.js Image. Content and product details use typed local data.
+Next.js App Router, React, TypeScript (strict mode), Tailwind CSS, Plus Jakarta Sans, DM Sans, and Next.js Image. Content and product details use typed local data.
 
 ## Implemented Pages
 
@@ -40,9 +40,11 @@ npm run dev
 
 Open `http://localhost:3000`. Static checks: `npm run typecheck` and `npm run lint`.
 
+Format source and project configuration with `npm run format`. Use `npm run format:check` to verify formatting without changing files.
+
 ## Design Reference
 
-[CEO SUITE Figma file](https://www.figma.com/design/oKMI3vIauSLGWvwkAJherf/Untitled?node-id=1-23179)
+FigCraft MCP (`figcraft://node/3`) with the local `Untitled.fig` document. The landing and product frames in that document provide the page measurements.
 
 ## Technical Decisions
 
@@ -50,7 +52,6 @@ Static sections are Server Components. Client Components own the navigation menu
 
 ## Known Limitations
 
-- The Figma Starter-plan tool limit prevented asset extraction for the Landing Page news section. Its layout and text are present, but original news photos are unavailable.
-- The Figma file exposes only desktop frames for the two implemented pages. Mobile layouts were adapted from the desktop design.
+- The landing and product designs expose 1920px desktop frames. Mobile layouts are adapted from those frames.
 - Authentication, newsletter subscription, app-store downloads, and booking require backend destinations not supplied with the assessment. They do not report false success.
 - The workspace instructions prohibit running or building the app, so browser and visual regression checks were not performed.

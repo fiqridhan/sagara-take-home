@@ -12,7 +12,10 @@ export default {
         blush: "#fff0f0",
       },
       maxWidth: { content: "1600px" },
-      fontFamily: { sans: ["Plus Jakarta Sans", "Arial", "sans-serif"] },
+      fontFamily: {
+        sans: ["Plus Jakarta Sans", "Arial", "sans-serif"],
+        news: ["DM Sans", "Arial", "sans-serif"],
+      },
     },
   },
   plugins: [],

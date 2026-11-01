@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+figcraft/
+public/assets/
+next-env.d.ts
+package-lock.json
+*.tsbuildinfo
+.env*
+.DS_Store
